@@ -38,7 +38,7 @@ with daily_data_show:
     last_date=list(df["date_posted"])[-1]
     
     start_date = st.date_input('Start date', first_date)
-    end_date = st.date_input('End date', last_date)
+    end_date = st.date_input('The final date', last_date)
     if start_date < end_date:
         st.success('Start date: `%s`\n\nEnd date:`%s`' % (start_date, end_date))
     else:
