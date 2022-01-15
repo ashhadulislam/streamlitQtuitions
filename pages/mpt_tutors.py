@@ -17,6 +17,7 @@ def app():
     age_distn = st.container()
     top_subjects = st.container()
     important_subjects = st.container()
+    footer = st.container() 
 
 
     with header:
@@ -204,4 +205,10 @@ def app():
         #     )
         )
         st.plotly_chart(fig, use_container_width=True)
+
+
+
+    with footer:
+        st.header("Read the detailed discussion on ")
+        st.write("Medium](https://ashhadulislam.medium.com/freelance-tutoring-in-qatar-33a27bee1403)")
 
